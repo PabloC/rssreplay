@@ -5,41 +5,38 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
   <meta http-equiv="Cache-control" content="no-cache" /> 
   <meta http-equiv="Pragma" content="no-cache" /> 
-  <title>RSS Replay - Welcome</title> 
+  <title>RSS Replay - PostRank</title> 
   
   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" /> 
   <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen" /> 
   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen" /> 
   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
-  <link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
 </head> 
  
 <body> 
   <div id="header" class="container_12 clearfix"> 
     <div id="logo"> 
-      <div><img src="http://postrank.com/images/pr_logo3.png" style="width:48px; height:48px; padding:1.15em 1em 0 0" /><a href="/">RSS Replay</a></div> 
+      <div><img src="http://postrank.com/images/pr_logo3.png" style="width:48px; height:48px; padding:1.15em 1em 0 0" /><a href="/"><strong>RSS</strong> Replay</a></div> 
     </div> 
     <div id="navigation"> 
       <ul id="nav"> 
-        <li><a href="/">Home</a></li> 
         <li><a href="http://apidocs.postrank.com/">postrank api docs</a></li> 
-        <li><a href="http://github.com/postrank/rssreplay">code</a></li> 
+        <li><a href="http://github.com/postrank/rssreplay">source code</a></li> 
       </ul> 
     </div> 
   </div> 
  
   <div id="content" class="container_12 clearfix"> 
-    <div class="grid_12 omega welcome"> 
+    <div class="grid_12"> 
+	
       <p>RSS Replay does exactly what it says! It replays the RSS feed, one item at a time, using an interval you specified. Why? Well, you just found an awesome feed, and you want to read through the archive, but you don't have the time to consume it all in one big glut. Instead, you can use RSS Replay to deliver the archive into your reader, one article at time.</p> 
  
-
-	<h2 id='customize'>Replay your feed</h2> 
-	<div class='highlight'>
+	<h2 id="customize">Replay feed</h2> 
+	<div>
 		<% if params['error'] %>
 			<div style="color:red">Hmm, PostRank can't find the feed you specified.</div>
 			<div style="color:red">Check your URL and try again, or, wait a few minutes and try again (PostRank will try to index the feed).</div>
 		<% end %>			
-		
 		
 		<pre>
 		<form method="post" action="/create" style="">
@@ -63,6 +60,7 @@
 			<input type="submit" value="Create Feed">
 		</form>
 		</pre>
+		
 	</div> 
 	<div>
 		<p><i>Hat tip to <a href="http://michaelnielsen.org/blog/">Michael Nielsen</a> for the idea</i>.</p> 
