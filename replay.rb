@@ -40,5 +40,6 @@ get "/:feed/:start/:interval/:postrank?" do
   c = Curl::Easy.new(url)
   c.perform
 
+  content_type 'text/xml', :charset => 'utf-8'
   c.body_str
 end
