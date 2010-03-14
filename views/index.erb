@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us"> 
+<head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
+  <meta http-equiv="Cache-control" content="no-cache" /> 
+  <meta http-equiv="Pragma" content="no-cache" /> 
+  <title>RSS Replay - Welcome</title> 
+  
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" /> 
+  <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen" /> 
+  <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen" /> 
+  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+</head> 
+ 
+<body> 
+  <div id="header" class="container_12 clearfix"> 
+    <div id="logo"> 
+      <div><img src="http://postrank.com/images/pr_logo3.png" style="width:48px; height:48px; padding:1.15em 1em 0 0" /><a href="/">RSS Replay</a></div> 
+    </div> 
+    <div id="navigation"> 
+      <ul id="nav"> 
+        <li><a href="/">Home</a></li> 
+        <li><a href="http://apidocs.postrank.com/">postrank api docs</a></li> 
+        <li><a href="http://github.com/postrank/rssreplay">code</a></li> 
+      </ul> 
+    </div> 
+  </div> 
+ 
+  <div id="content" class="container_12 clearfix"> 
+    <div class="grid_12 omega welcome"> 
+      <p>RSS Replay does exactly what it says! It replays the RSS feed, one item at a time, using an interval you specified. Why? Well, you just found an awesome feed, and you want to read through the archive, but you don't have the time to consume it all in one big glut. Instead, you can use RSS Replay to deliver the archive into your reader, one article at time.</p> 
+ 
+
+	<h2 id='customize'>Replay your feed</h2> 
+	<div class='highlight'>
+		<pre>
+		<form method="post" action="/create" style="">
+			<label for="feed">Feed URL:</label>
+			<input type="text" name="feed" size="80"/>
+			<span style="font-size:0.8em;color:#999">ex: http://www.igvita.com/feed</span>
+			
+			<label for="feed">Interval for new stories:</label>
+			<input type="text" name="interval" size="50"/>
+			<span style="font-size:0.8em;color:#999">ex: "1 day", "10 days", "1 month"</span>
+			
+			<input type="submit" value="Create Feed">
+		</form>
+		</pre>
+	</div> 
+	<div>
+		<p><i>Hat tip to <a href="http://michaelnielsen.org/blog/">Michael Nielsen</a> for the idea</i>.</p> 
+	</div>
+  </div> 
+ 
+  <div id="footer" class="container_12 clearfix"> 
+    <div id="copy"> 
+      Copyright 2010. <a href="http://www.igvita.com">Ilya Grigorik</a>.
+    </div> 
+  </div> 
+ 
+</body> 
+</html>
