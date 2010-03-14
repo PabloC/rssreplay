@@ -1,0 +1,7 @@
+= RSS Replay
+
+RSS Replay does exactly what it says! It replays the RSS feed, one item at a time, using an interval you specified. Why? Well, you just found an awesome feed, and you want to read through the archive, but you don't have the time to consume it all in one big glut. Instead, you can use RSS Replay to deliver the archive into your reader, one article at time.
+
+Give it a try @ http://rssreplay.heroku.com/
+
+PostRank API docs: http://apidocs.postrank.com
