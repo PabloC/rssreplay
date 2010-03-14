@@ -35,6 +35,12 @@
 
 	<h2 id='customize'>Replay your feed</h2> 
 	<div class='highlight'>
+		<% if params['error'] %>
+			<div style="color:red">Hmm, PostRank can't find the feed you specified.</div>
+			<div style="color:red">Check your URL and try again, or, wait a few minutes and try again (PostRank will try to index the feed).</div>
+		<% end %>			
+		
+		
 		<pre>
 		<form method="post" action="/create" style="">
 			<label for="feed">Feed URL:</label>
